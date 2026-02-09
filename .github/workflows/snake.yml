@@ -17,11 +17,12 @@ jobs:
       - name: Generate Snake
         uses: Platane/snk@v3
         with:
+          # ชื่อบัญชี github ข���งคุณ
           github_user_name: chakracha1
+          # ไฟล์ที่จะได้ออกมา
           outputs: |
-            # เปลี่ยนสีงู (color_snake) เป็นสีฟ้าสว่าง #00ffff (Cyan)
-            # เปลี่ยนสีจุด (color_dots) เป็นโทนมืดไล่ไปสว่าง (น้ำเงินเข้ม -> ฟ้า)
-            dist/github-contribution-grid-snake.svg?color_snake=#00ffff&color_dots=#161b22,#0e4429,#006d32,#26a641,#39d353
+            dist/github-contribution-grid-snake.svg
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
 
       - name: Push to GitHub
         uses: crazy-max/ghaction-github-pages@v3.1.0
