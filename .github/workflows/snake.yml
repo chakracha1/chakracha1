@@ -1,5 +1,5 @@
 name: Generate Snake
-
+ 
 on:
   # ให้รันทุกวันตอนเที่ยงคืน
   schedule:
